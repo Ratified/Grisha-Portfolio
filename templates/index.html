@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <title>Portfolio Website | For GRISHA</title>
+</head>
+<body>
+
+    <header class="home">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li><a class="close-btn" href="#" onclick="hideSideBar()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <ul class="straightbar">
+                <li class="logo"><a href="#">GRISHA</a></li>
+                <li><a class="hideOnMobile" href="#">Home</a></li>
+                <li><a class="hideOnMobile" href="#about-me">About</a></li>
+                <li><a class="hideOnMobile" href="#projects">Projects</a></li>
+                <li><a class="hideOnMobile" href="#contact">Contact Me</a></li>
+                <li><a href="#" class="menu-button" onclick="showSideBar()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg></a></li>
+            </ul>
+        </nav>
+
+        <div class="heroSection">
+            <div class="heroSection__textContent">
+                <h1>Meet GRISHA</h1>
+                <p> — <span class="analyst">a Business Analyst</span> with a knack for unraveling the intricacies of data landscapes. My peers often laud my meticulous eye for detail. Count on me to guide your company towards its objectives, crafting insightful and scalable solutions along the way. Let's turn data into decisions and goals into achievements.</p>
+                <div class="links">
+                    <a href="https://github.com/grishag55"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg></a>
+                </div>
+                <a href="#" class="contact-btn">Contact Me</a>
+            </div>
+            <div class="heroSection__img">
+                <img src="{{url_for('static', filename='images/about.png')}}" alt="Business Dashboard">
+            </div>
+        </div>
+    </header>
+
+    <!--ABOUT ME-->
+    <section id="about-me">
+        <div class="container">
+            <h1 class="titles" style="text-align:center;">ABOUT ME</h1>
+            <div class="about-me__content">
+                <div class="about-me__img">
+                    <img src="{{url_for('static', filename='images/3d-man.png')}}" alt="Grisha">
+                </div>
+                <div class="about-me__text">
+                    <p>My passion for data analysis began in 2018 when I was working as a Business Analyst at a large company. I was tasked with creating a dashboard that would help the company's executives make better decisions. I was able to create a dashboard that was not only visually appealing but also easy to use.</p>
+                    <p>My Skills Include:</p>
+                    <div class="skills__images">
+                        <img src="{{url_for('static', filename='images/python.jpg')}}" alt="Python">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m24 21v-12h-2v14h8v-2z"/><path d="m18 9h-4a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h1v2a2 2 0 0 0 2 2h2v-2h-2v-2h1a2 2 0 0 0 2-2v-10a2 2 0 0 0 -2-2zm-4 12v-10h4v10z"/><path d="m8 23h-6v-2h6v-4h-4a2 2 0 0 1 -2-2v-4a2 2 0 0 1 2-2h6v2h-6v4h4a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2z"/><path d="m0 0h32v32h-32z" fill="none"/></svg>
+                        <img src="{{url_for('static', filename='images/tableau.png')}}" alt="Tableau">
+                        <img src="{{url_for('static', filename='images/excel.png')}}" alt="Excel">
+                        <img src="{{url_for('static', filename='images/powerBI.png')}}" alt="PowerBi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--ABOUT ME-->
+
+<!--PROJECTS-->
+
+    <section id="projects">
+        <h1 class="titles" style="text-align:center;">PROJECTS</h1>
+
+         <div class="project">
+            <div class="project__img">
+                <img src="{{url_for('static', filename='images/p1.png')}}" alt="Project 1">
+            </div>
+            <div class="project__text">
+                <h2>SHOE SELLING WEBSITE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project__img">
+                <img src="{{url_for('static', filename='images/p2.png')}}" alt="Project 2">
+            </div>
+            <div class="project__text">
+                <h2>IDMB RATING ANALYSIS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project__img">
+                <video controls loop="true" src="{{url_for('static', filename='images/openheimer.mp4')}}"></video>
+            </div>
+            <div class="project__text">
+                <h2>MOVIE LIVE STREAMING WEBSITE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <a href="#">View Project</a>
+            </div>
+    </section>
+
+
+<!--END OF PROJECTS-->
+
+    <!--CONTACT ME-->
+    <section id="contact">
+        <div class="container">
+            <h1 class="titles" style="text-align:center;">CONTACT ME</h1>
+        </div>
+
+        <div class="error">Please Fill In All Fields!</div>
+        <div class="successful">Message sent successfully.</div>
+        
+        <div class="wrapped-contact">
+            <div class="form">
+                <form id="my-form" action="mail.php" method="post">
+                    <div class="input-group">
+                        <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email"><i class="fa-regular fa-envelope"></i> Your Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="message"><i class="fa-solid fa-comment"></i> Your Message</label>
+                        <textarea name="message" id="message" rows="8"></textarea>
+                    </div>
+                    <button type="submit" class="send" onclick="validate()" >Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+            
+        </div>
+    
+    </section>
+
+<!--Footer-->
+    <footer id="footer">
+        <div class="copyright">
+            <p>Copyright &copy; 2023 - All Rights Reserved</p>
+        </div>
+        <div class="designed">
+            <p>Designed and Developed by Grisha</p>
+        </div>
+    </footer>
+    
+
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
